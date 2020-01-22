@@ -23,7 +23,6 @@ var gElTimer = document.querySelector('.timer');
 function initGame() {
   // gGame.isOn = false;
   gBoard = buildBoard();
-  console.log(gBoard)
   renderBoard()
   getLevelsBtns();
 }
