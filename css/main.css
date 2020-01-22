@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Bangers-Regular";
+  src: url("../fonts/Bangers-Regular.ttf")  format('truetype');
+}
+
+body {
+  text-align: center;
+  font-family: "Bangers-Regular", cursive;
+  font-size: 1.3rem;
+}
+
+.title {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.smiley-btn {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  transition: .3s;
+}
+
+.smiley-btn:hover {
+  cursor: pointer;
+}
+
+.score-board-container {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.score-board-container * {
+  width: 150px;
+}
+
+.score {
+  margin: 5px auto;
+}
+
+.smiley {
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.timer {
+  margin: 5px auto;
+}
+
+.lvl-btn {
+  font-family: "Bangers-Regular", cursive;
+  font-size: 1.3rem;
+  width: 100px;
+  margin: 0 2.5px 1.5rem 2.5px;
+  transition: .3s;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.lvl-btn:hover {
+  cursor: pointer;
+  width: 200px;
+  background: black;
+  color: white;
+}
+
+.extreme:hover {
+  background: rgb(197, 0, 0);
+  color: white;
+}
+
+table {
+  margin: 0 auto;
+}
+
+td {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgb(78, 78, 78);
+}
+
+.cell {
+  background: rgb(109, 109, 109);
+}
+
+.open-cell {
+  background: rgb(189, 189, 189);
+}
+
+.marked-cell:after {
+  content: "🚩";
+}
