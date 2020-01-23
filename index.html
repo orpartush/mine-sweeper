@@ -14,18 +14,33 @@
   <main class="app-container">
     <section class="score-board-container flex">
       <div class="score-wrapper">
-        <label for="score">Score</label>
-        <p class="score">0</p>
+        <label for="best-score">Best Score:</label>
+        <p class="best-score">0</p>
+        <div class="your-score-wrapper">
+          <label class="score-label" for="score">Your Score:</label>
+          <p class="score">0</p>
+        </div>
       </div>
       <div class="smiley-wrapper">
-        <button class="smiley-btn" onclick="restartGame()">😀</button>
+        <button title="restart game" class="smiley-btn" onclick="restartGame()">😀</button>
       </div>
-      <div class="timer-wrapper">
-        <label for="timer">Time</label>
-        <p class="timer">00:00:00</p>
-      </div>
+      <section>
+        <div class="timer-wrapper">
+          <label for="timer">Time:</label>
+          <p class="timer">00:00:00</p>
+        </div>
+        <div class="safe-click">
+          <button class="safe-click-btn" onclick="showSafeCell(this)">Safe Click</button>
+          <p class="clicks-left">3 left</p>
+        </div>
+      </section>
     </section>
-    <section class="levels-container flex"></section>
+    <section class="btns-container flex">
+      <button title="manual mines mode" class="manual-mines-hints-btn mines-btn" onclick="setManualModeOn()">⛏️</button>
+      <button title="hint" class="manual-mines-hints-btn hints-btn" onclick="getHint(this)">💡</button>
+      <section class="lvls-container flex"></section>
+      <section title="remaining lifes" class="lifes flex"></section>
+    </section>
     <table border="2">
       <tbody class="board"></tbody>
     </table>

@@ -12,11 +12,13 @@
 body {
   text-align: center;
   font-family: "Bangers-Regular", cursive;
-  font-size: 1.3rem;
+  background: #00112c;
+  color: #0abf53;
 }
 
 .title {
-  margin-top: 1rem;
+  font-size: 3rem;
+  padding-top: 10px;
 }
 
 .flex {
@@ -25,7 +27,7 @@ body {
 }
 
 .smiley-btn {
-  font-size: 3rem;
+  font-size: 4rem;
   background: none;
   border: none;
   transition: .3s;
@@ -36,46 +38,97 @@ body {
 }
 
 .score-board-container {
-  width: 50%;
+  width: 90%;
+  padding: 10px 0;
   margin: 1rem auto;
+  background: #0abf53;
+  color: #00112c;
+  border-radius: 20px;
 }
 
 .score-board-container * {
   width: 150px;
 }
 
-.score {
-  margin: 5px auto;
+.your-score-wrapper {
+  margin-top: 15px;
 }
 
 .smiley {
   margin: 0 auto;
-  font-size: 1rem;
 }
 
-.timer {
-  margin: 5px auto;
+.safe-click {
+  margin-top: 10px;
+}
+
+.safe-click-btn {
+  font-family: "Bangers-Regular", cursive;
+  font-size: 1rem;
+  border-radius: 20px;
+  background: none;
+  border: 2px solid #00112c;
+  color: #00112c;
+  width: 50%;
+  padding: 5px;
+  transition: .3s;
+}
+
+.safe-click-btn:hover {
+  cursor: pointer;
+  color: white;
+  background: #00112c;
+  width: 70%;
+}
+
+.clicks-left {
+  font-size: 0.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.manual-mines-hints-btn {
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+  border: none;
+  background: none;
+  width: 35px;
+}
+
+.manual-mines-hints-btn:hover {
+  cursor: pointer;
 }
 
 .lvl-btn {
   font-family: "Bangers-Regular", cursive;
-  font-size: 1.3rem;
-  width: 100px;
+  font-size: 1.2rem;
+  width: 80px;
   margin: 0 2.5px 1.5rem 2.5px;
   transition: .3s;
-  border: 2px solid black;
+  background: #00112c;
+  border: 2px solid #0abf53;
+  color: #0abf53;
   border-radius: 10px;
 }
 
 .lvl-btn:hover {
   cursor: pointer;
-  width: 200px;
-  background: black;
+  width: 160px;
   color: white;
+  background: #0abf53;
+}
+
+.lifes {
+  margin-left: 10px;
+  cursor: default;
+}
+
+.life {
+  font-size: 1rem;
 }
 
 .extreme:hover {
-  background: rgb(197, 0, 0);
+  background: #d72323;
   color: white;
 }
 
@@ -85,9 +138,10 @@ table {
 
 td {
   cursor: pointer;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border: 2px solid rgb(78, 78, 78);
+  color: #00112c;
 }
 
 .cell {
@@ -98,6 +152,16 @@ td {
   background: rgb(189, 189, 189);
 }
 
+.safe-cell {
+  background: rgb(113, 113, 253);
+}
+
 .marked-cell:after {
   content: "🚩";
+}
+
+@media (min-width: 1025px){
+  .score-board-container {
+    width: 40%;
+  }
 }
