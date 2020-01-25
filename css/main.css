@@ -26,16 +26,6 @@ body {
   justify-content: center;
 }
 
-.smiley-btn {
-  font-size: 4rem;
-  background: none;
-  border: none;
-  transition: .3s;
-}
-
-.smiley-btn:hover {
-  cursor: pointer;
-}
 
 .score-board-container {
   width: 90%;
@@ -48,6 +38,19 @@ body {
 
 .score-board-container * {
   width: 150px;
+  font-size: 1.2rem;
+  
+}
+
+.smiley-btn {
+  font-size: 4rem;
+  background: none;
+  border: none;
+  transition: .3s;
+}
+
+.smiley-btn:hover {
+  cursor: pointer;
 }
 
 .your-score-wrapper {
@@ -56,6 +59,7 @@ body {
 
 .smiley {
   margin: 0 auto;
+  /* font-size: 3rem; */
 }
 
 .safe-click {
@@ -87,6 +91,10 @@ body {
   font-weight: bold;
 }
 
+.manual-mines-left {
+  cursor: default;
+}
+
 .manual-mines-hints-btn {
   font-size: 1rem;
   margin-bottom: 1.8rem;
@@ -101,7 +109,7 @@ body {
 
 .lvl-btn {
   font-family: "Bangers-Regular", cursive;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 80px;
   margin: 0 2.5px 1.5rem 2.5px;
   transition: .3s;
@@ -113,7 +121,7 @@ body {
 
 .lvl-btn:hover {
   cursor: pointer;
-  width: 160px;
+  width: 130px;
   color: white;
   background: #0abf53;
 }
@@ -130,6 +138,7 @@ body {
 .extreme:hover {
   background: #d72323;
   color: white;
+  border: 2px solid #d72323;
 }
 
 table {
@@ -150,6 +159,10 @@ td {
 
 .open-cell {
   background: rgb(189, 189, 189);
+}
+
+.unable-safeclick:hover {
+  cursor: not-allowed;
 }
 
 .safe-cell {
