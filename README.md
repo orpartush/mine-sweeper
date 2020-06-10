@@ -1,3 +1,5 @@
-# mine-sweeper
+# Minesweeper
+Main technologies: HTML, CSS, Javascript
 
-Check it out: https://orpartush.github.io/mine-sweeper/
+# Live Demo
+https://orpartush.github.io/mine-sweeper/
